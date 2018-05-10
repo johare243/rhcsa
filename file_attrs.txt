@@ -1,0 +1,20 @@
+File Attributes
+
+1) List current file attributes 
+  # lsattr [options] <file>
+
+
+2) Change file attributes
+  # chattr [options] <file>
+
+  e.g.: chattr +i /etc/fstab
+
+| Attribute | Description                                                     |
+|-----------|-----------------------------------------------------------------|
+|     a     | append only, prevents deletion, but can append to file          |
+|     d     | no dump, disallows backups of file with the dump command        |
+|     e     | extend format, set with ext4 FS, an attr that may not be removed|
+|     i     | immutable, prevents deletion or any change to file              |
+|     c     | compressed                                                      |
+|     s     | secure deletion                                                 |
+|     u     | undeletable                                                     |  
