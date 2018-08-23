@@ -20,6 +20,7 @@
     * \# cp -a /media/. /path/to/dir (/var/www/html/inst or /var/ftp/pub/inst)         # -a copies all files in archive recursively 
 
 3. Ensure correct SELinux context
+    * \# chcon -R -t public_content_t /var/ftp
     * \# chcon -R --reference=/var/www/html /var/www/html/inst
 
 4. Configure Firewall
@@ -27,5 +28,5 @@
     * \# firewall-cmd --reload
 
 5. Start/enable server to start at boot
-     \# systemctl restart httpd
-     \# systemctl enable httpd
+    * \# systemctl restart httpd
+    * \# systemctl enable httpd
