@@ -2,16 +2,16 @@
 ## Permanently Activate IP Forwarding (KVM hyperviser has IP forwarding disabled by default)
 
 1. Add the following line to '/etc/sysctl.conf'
-  * net.ipv4.ip_forward=1
+    * net.ipv4.ip_forward=1
   
 2. Implement Changes immediately on local system
-  * # sysctl -p
+    * \# sysctl -p
 
 
 ## Create HTTP/FTP server of RH7 iso
   
-  1. Install and start server client (HTTP or FTP)
-    * # yum -y install httpd (vsftpd)
+1. Install and start server client (HTTP or FTP)
+  \t* # yum -y install httpd (vsftpd)
     * # systemctl start httpd
 
   2. Mount iso to drive and copy files to server location
