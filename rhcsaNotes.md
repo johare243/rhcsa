@@ -1,11 +1,11 @@
 #Configure Repo Server (HTTP/FTP)
 ## Permanently Activate IP Forwarding (KVM hyperviser has IP forwarding disabled by default)
 
-  1. Add the following line to '/etc/sysctl.conf'
-    * net.ipv4.ip_forward=1
+1. Add the following line to '/etc/sysctl.conf'
+  * net.ipv4.ip_forward=1
   
-  2. Implement Changes immediately on local system
-    * # sysctl -p
+2. Implement Changes immediately on local system
+  * # sysctl -p
 
 
 ## Create HTTP/FTP server of RH7 iso
