@@ -27,5 +27,5 @@
     * \# firewall-cmd --reload
 
 5. Start/enable server to start at boot
-    * \# systemctl restart httpd
-    * \# systemctl enable httpd
+     \# systemctl restart httpd
+     \# systemctl enable httpd
